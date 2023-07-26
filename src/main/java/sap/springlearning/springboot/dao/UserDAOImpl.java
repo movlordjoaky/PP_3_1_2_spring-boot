@@ -3,12 +3,12 @@ package sap.springlearning.springboot.dao;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import sap.springlearning.springboot.model.User;
 
 import java.util.List;
 
-@Component
+@Repository
 public class UserDAOImpl implements UserDAO {
     @PersistenceContext
     private EntityManager entityManager;
