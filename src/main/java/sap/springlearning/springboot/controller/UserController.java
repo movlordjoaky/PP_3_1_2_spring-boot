@@ -13,7 +13,7 @@ public class UserController {
     private final UserService userService;
 
     @Autowired
-    public UserController(UserDAO userDAO, UserService userService) {
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 
