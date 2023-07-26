@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 @Transactional(readOnly = true)
 public class UserService {
-    UserDAO userDAO;
+    private final UserDAO userDAO;
 
     @Autowired
     public UserService(UserDAO userDAO) {

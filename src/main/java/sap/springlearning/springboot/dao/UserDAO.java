@@ -11,7 +11,7 @@ import java.util.List;
 @Component
 public class UserDAO {
     @PersistenceContext
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     public UserDAO() {
     }
